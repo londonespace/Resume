@@ -1,0 +1,34 @@
+$accent: orange // Accent Color
+$fontsize: 16px // Body Font Size
+$textcolor: #333 // Text Color
+$default-font: 'robobo'
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+  @font-face
+    font-family: $fname
+    font-style: $fstyle
+    font-weight: $fweight
+		// font-display: swap // Uncomment to initially display system fonts
+    src: local($fname), url($furl) format('woff2')
+
+::placeholder
+  color: #666
+
+::selection
+  background-color: $accent
+  color: #fff
+
+input, textarea
+  outline: none
+  &:focus:required:invalid
+    border-color: red
+  &:required:valid
+    border-color: green
+
+body
+  font-family: $default-font
+  font-size: $fontsize
+  position: relative
+  line-height: 1.65
+  overflow-x: hidden
+  color: $textcolor

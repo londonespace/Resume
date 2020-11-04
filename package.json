@@ -1,0 +1,36 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "my personal resume on pure css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/londonespace/Resume.git"
+  },
+  "keywords": [
+    "resume",
+    "paper-css"
+  ],
+  "author": "Peter Ilyash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/londonespace/Resume/issues"
+  },
+  "homepage": "https://github.com/londonespace/Resume#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "paper-css": "^0.4.1"
+  }
+}
