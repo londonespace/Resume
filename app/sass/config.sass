@@ -1,15 +1,23 @@
 $accent: orange // Accent Color
 $fontsize: 16px // Body Font Size
 $textcolor: #333 // Text Color
-$default-font: 'robobo'
+$default-font: 'Lato-resume'
+
+$lato: 'Lato-resume'
+$fontawesome: 'FontAwesome'
 
 @mixin font($fname, $fstyle, $fweight, $furl)
   @font-face
     font-family: $fname
     font-style: $fstyle
     font-weight: $fweight
-		// font-display: swap // Uncomment to initially display system fonts
     src: local($fname), url($furl) format('woff2')
+
+@include font('Lato-resume', normal, 400, '../fonts/lato-regular-webfont.woff2')
+@include font('Lato-resume', normal, 700, '../fonts/lato-bold-webfont.woff2')
+@include font('FontAwesome', normal, 400, '../fonts/fontawesome-webfont.woff2')
+
+@import '../libs/paper-css/paper.min.css'
 
 ::placeholder
   color: #666
@@ -32,3 +40,6 @@ body
   line-height: 1.65
   overflow-x: hidden
   color: $textcolor
+
+@page
+  size: A4
