@@ -1,0 +1,35 @@
+.content-container
+  margin: 0 auto
+  width: 154mm
+
+.content-header
+  text-transform: uppercase
+  color: $accent
+  font-size: 14pt
+  margin: 0
+  padding: 4mm 0
+
+.content-item
+  display: grid
+  grid-template-areas: "interval header" "interval info"
+  grid-template-columns: 28mm auto
+  font-size: 9pt
+  color: #979391
+  grid-column-gap: 10mm
+  padding-bottom: 5mm
+
+.content-item-header
+  grid-area: header
+  font-size: 10pt
+  color: #000
+  font-weight: 400
+  margin: 0
+
+.content-item-interval
+  grid-area: interval
+  margin: 0
+
+.content-item-info
+  grid-area: info
+  margin: 0
+  margin-top: 1.5mm
