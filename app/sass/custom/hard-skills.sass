@@ -1,0 +1,23 @@
+.hard-skills-list
+  list-style: none
+  font-size: 10pt
+  color: $grey
+  font-weight: bold
+  margin: 0
+  padding: 0
+  display: flex
+  flex-wrap: wrap
+
+.hard-skill-item:not(:last-child)
+  position: relative
+  padding-right: 10pt
+
+  &::after
+    position: absolute
+    right: 5pt
+    top: 50%
+    transform: translate(50%, -50%)
+    display: block
+    font-family: $fontawesome
+    font-size: 4pt
+    content: '\f111'
