@@ -1,0 +1,37 @@
+.contacts
+  font-size: 8pt
+
+.contacts-list
+  display: flex
+  list-style: none
+  margin: 0 auto
+  padding: 6mm 0
+  justify-content: space-between
+  width: 65%
+
+.contact-line
+  position: relative
+  padding-left: 5mm
+  letter-spacing: 0.03rem
+
+  &:before
+    font-family: $fontawesome
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    font-size: 12pt
+    color: #808080
+
+.contact
+  &-linked-in, &-mail, &-github
+    @extend .contact-line
+
+.contact-linked-in:before
+  content: '\f08c'
+
+.contact-mail:before
+  content: '\f199'
+
+.contact-github:before
+  content: '\f092'
