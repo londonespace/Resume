@@ -1,26 +1,34 @@
 .contacts
   font-size: 8pt
+  justify-self: end
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  bottom: 0
+  width: 60%
 
 .contacts-list
   display: flex
   list-style: none
   margin: 0 auto
-  padding: 6mm 0
+  padding: 4mm 0
   justify-content: space-between
-  width: 65%
 
 .contact-line
   position: relative
   padding-left: 5mm
+  color: rgba(255, 255, 255, 0.9)
 
-  &:before
+  &::before
     font-family: $fontawesome
     position: absolute
     left: 0
     top: 50%
     transform: translateY(-50%)
     font-size: 12pt
-    color: #808080
+
+  &:not(:last-child)
+    margin-right: 5mm
 
 .contact
   &-linked-in, &-mail, &-github
