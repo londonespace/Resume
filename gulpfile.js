@@ -9,7 +9,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 
 const imageMin = require('gulp-imagemin');
-const newer = require('gulp-newer');
 const del = require('del');
 
 //BROWSER 'SYNC'
