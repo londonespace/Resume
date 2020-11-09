@@ -53,7 +53,6 @@ function buildDistStyles() {
 
 function minimazeImages() {
   return src('app/img/**/*')
-    .pipe(newer('dist/img/**/*'))
     .pipe(imageMin())
     .pipe(dest('dist/img/'));
 }
